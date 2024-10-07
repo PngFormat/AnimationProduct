@@ -1,0 +1,65 @@
+.mainContainer {
+    width: 1500px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+    padding: 2rem;
+    justify-items: center;
+    align-items: center;
+}
+
+
+.backContainer {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    background-color: #51d9db;
+}
+
+.logo {
+    background-image: url("https://static.vecteezy.com/system/resources/previews/042/538/623/non_2x/white-smartphone-mockup-blank-screen-isolated-on-transparent-background-smartphone-mockup-frame-free-png.png");
+    background-size: cover;
+    width: 400px;
+    height: 500px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo:hover {
+    transform: scale(1.05); /* Увеличение при наведении */
+}
+
+.phoneContent {
+    width: 80%;
+    height: 80%;
+    background-color: white; /* Контент внутри айфона */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 1rem;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.2); /* Немного тени внутри */
+}
+
+.textContainer {
+    
+    font-size: 1.2rem;
+    color: #333;
+    line-height: 1.5;
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+.hidden {
+    transform: translateY(-40%); 
+    opacity: 0.7;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+.visible {
+    transform: translateY(0); 
+    opacity: 1; 
+}

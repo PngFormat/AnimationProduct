@@ -1,0 +1,95 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+   
+    color: white;
+    position: relative;
+    width: 1500px;
+}
+
+.headerContainer {
+    display: flex;
+    background-color: #282c34;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    background-image: url("https://marketplace.canva.com/EAFauoQSZtY/1/0/1600w/canva-brown-mascot-lion-free-logo-qJptouniZ0A.jpg");
+    background-size: cover;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.profile {
+    background-image: url("https://www.freeiconspng.com/uploads/am-a-19-year-old-multimedia-artist-student-from-manila--21.png");
+    background-size: cover;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: block; 
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    flex: 1; 
+}
+
+nav a {
+    margin-top: 10px;
+    font-size: 1.2rem;
+    color: #f0f0f0;
+    text-decoration: none;
+    transition: color 0.3s, transform 0.3s ease;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+nav a:hover {
+    color: #61dafb;
+    transform: translateY(-3px);
+}
+
+.moveText {
+    position: absolute;
+    top: 50%;
+    left: 50px; 
+    transform: translateY(-50%); 
+    background-color: #333;
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 300px; 
+    height: 2rem;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+}
+
+.moveText p {
+    animation: smoothMarquee 8s cubic-bezier(1, 1, 0.36, 1) infinite;
+    font-size: 1.2rem;
+    color: #e5a1a1;
+    white-space: nowrap; 
+}
+
+@keyframes smoothMarquee {
+    0% {
+        transform: translateX(100%);
+    }
+    20% {
+        transform: translateX(0);
+    }
+    80% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
