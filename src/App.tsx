@@ -2,6 +2,8 @@ import React, {useState} from 'react';
 import './App.css';
 import Header from "./components/header";
 import styles from './styles/main.module.css';
+import Footer from './components/footer';
+import ImageCarousel from './components/ImageCarousel';
 
 function App() {
   const [logos, setLogos] = useState({
@@ -18,6 +20,12 @@ function App() {
     });
     setHovered(!hovered);
   };
+
+  const imagesAndText = [
+    { image: 'https://media.assettype.com/analyticsinsight%2F2024-07%2Fb1817f27-f5f3-4818-99be-9e4d38564780%2FiPhone-16-Pro-Price%2C-Release%2C-Design%2C-and-Features.jpg', text: 'Iphone 16 the latest phone in industry' },
+    { image: 'https://images.macrumors.com/article-new/2024/09/iphone-16-design.jpg', text: 'Features' },
+    { image: 'https://gizcompare.com/wp-content/uploads/2024/09/iPhone-16-Specs.webp', text: 'Color gamma' },
+  ];
 
 
   return (
@@ -47,8 +55,15 @@ function App() {
           <h2>iPhone 12 Mini</h2>
           <p>The iPhone 12 Mini packs the same powerful A14 Bionic chip in a smaller form factor with a 5.4-inch Super Retina XDR display.</p>
         </div>
+        
+       
       </div>
+     
       </div>
+      <ImageCarousel items={imagesAndText}></ImageCarousel>
+
+      
+      <Footer/>
     </div>
   );
 }

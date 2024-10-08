@@ -1,0 +1,39 @@
+.carouselContainer {
+    width: 1500px;
+    padding: 2rem;
+    justify-items: center;
+    align-items: center;
+  }
+
+  
+.backContainer {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    background-color: #51d9db;
+}
+
+ 
+  
+  .carouselImage {
+    border-radius: 10px;
+    transition: opacity 1s ease-in-out, transform 0.3s ease-in-out; 
+  }
+  
+  .carouselImage:hover {
+    transform: scale(1.05); 
+  }
+  
+  .carouselText {
+    position: relative;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-align: center;
+    transition: opacity 0.5s ease-in-out; 
+  }
+  
